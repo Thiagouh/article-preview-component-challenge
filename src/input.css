@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+	font-family: 'Manrope', sans-serif;
+	background: hsl(210, 46%, 95%);
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 16px solid hsl(217, 19%, 35%);
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+}
+
+/* custom colors */
+
+/* share background color */
+.cs-dark-gray-blue {
+	background: hsl(217, 19%, 35%);
+}
+
+/* paragraph color */
+.cs-font-dark-gray-blue {
+	color: hsl(217, 19%, 35%);
+}
+
+/* paragraph color */
+.cs-font-desaturated-dark-blue {
+	color: hsl(214, 17%, 51%);
+}
+
+/* share button color */
+.cs-desaturated-dark-blue {
+	background: hsl(214, 17%, 51%);
+}
+
+/* share text color */
+.cs-font-gray-blue {
+	color: hsl(212, 23%, 69%);
+}
+
+/* share background color */
+.cs-light-gray-blue {
+	background: hsl(210, 46%, 95%);
+}

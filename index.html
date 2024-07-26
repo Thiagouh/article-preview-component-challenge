@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a4bfa0de04.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <main
+      class="w-72 overflow-hidden rounded-lg shadow-lg bg-white lg:w-[685px] lg:h-64 lg:flex lg:flex-row"
+    >
+      <img id="responsiveImage" src="images/drawers(mobile).jpg" alt="Drawers Mobile">
+      <div>
+        <p class="font-bold text-base cs-font-dark-gray-blue mx-7 mt-8">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </p>
+        <p class="my-4 mx-7 cs-font-desaturated-dark-blue">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <!-- Profile Div -->
+        <div id="divProfile" class="flex items-center justify-center py-3 lg:pb-6 lg:pl-7">
+          <img
+            class="w-10 rounded-full"
+            src="./images/avatar-michelle.jpg"
+            alt="Michelle Avatar"
+          />
+          <span class="ml-4 font-semibold">
+            <p class="font-bold cs-font-dark-gray-blue">Michelle Appleton</p>
+            <p class="cs-font-dark-gray-blue opacity-60">28 Jun 2020</p>
+          </span>
+          <button
+            id="divProfileButton"
+            type="button"
+            class="w-8 h-8 ml-9 rounded-full cs-light-gray-blue lg:ml-auto lg:mr-8"
+          >
+           <img class="pl-2 pb-1" src="./images/icon-share.svg" alt="Share Icon">
+          </button>
+        </div>
+
+        <!-- Share Div -->
+      <div id="divShare" class="h-16 hidden justify-center items-center cs-dark-gray-blue lg:absolute lg:ml-[15.95rem] lg:bottom-[18.5rem] lg:rounded-lg lg:px-6 lg:shadow-xl">
+          <p class="text-xs cs-font-gray-blue pl-4">
+            S H A R E
+          </p>
+          <span class="w-32 flex justify-evenly pl-7">
+            <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+            <img src="./images/icon-pinterest.svg" alt="Pinterest Icon">
+            <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+          </span>
+          <button
+            id="divShareButton"
+            type="button"
+            class="w-7 h-7 ml-9 rounded-full cs-desaturated-dark-blue"
+          >
+            <img class="pl-1.5" src="./images/icon-share-activated.svg" alt="Share Icon">
+          </button>
+          <span class="triangle lg:absolute lg:top-16"></span>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
